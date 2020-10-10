@@ -66,7 +66,10 @@ CardCreate
     click element   xpath://input[@class='primary confirm mod-submit-edit js-add-checklist-item']
     input text  xpath://textarea[@placeholder='Добавить элемент']   Архивация карточки
     click element   xpath://input[@class='primary confirm mod-submit-edit js-add-checklist-item']
+    
     #mark finished steps
+    #Если честно, не разобрался, как выбирать опции в произвольном порядке, поскольку в Трелло отсутствуют нормальные идентификаторы
+    
     click element   xpath://div[@class='checklist-item no-assignee no-due']/div[@class='checklist-item-checkbox enabled js-toggle-checklist-item']
     click element   xpath://div[@class='checklist-item no-assignee no-due']/div[@class='checklist-item-checkbox enabled js-toggle-checklist-item']
     click element   xpath://div[@class='checklist-item no-assignee no-due']/div[@class='checklist-item-checkbox enabled js-toggle-checklist-item']
@@ -80,7 +83,10 @@ CardTransfer
     click element   xpath://span[@class='placeholder']
     input text  xpath://input[@class='list-name-input']     Finishing point column
     click element   xpath://input[@class='primary mod-list-add-button js-save-edit']
+    
     #card moving
+    #Пытался через drag and drop, но xpath для "drop'а" адекватный не смог сконструировать, потому пошёл обходным путём через меню.
+    
     wait until element is visible   xpath://a[@class='list-card js-member-droppable ui-droppable']
     open context menu   xpath://div[@class='list-card-details js-card-details']
     click link      xpath://a[@class='quick-card-editor-buttons-item js-move-card']
