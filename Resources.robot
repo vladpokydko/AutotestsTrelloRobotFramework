@@ -1,7 +1,7 @@
 *** Variables ***
 ${url}  https://trello.com/
-${TrelloLogin}  surfingtheweb173@gmail.com
-${TrelloPassword}  Test12341234
+${TrelloLogin}  DELETED@gmail.com
+${TrelloPassword}  DELETED
 
 *** Keywords ***
 LaunchTrello
