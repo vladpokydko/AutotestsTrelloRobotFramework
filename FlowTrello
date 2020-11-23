@@ -1,0 +1,10 @@
+Autotests with Robot Framework + Selenium WebDriver
+https://trello.com/ 
+
+Flow:
+Authorization
+Creating new board
+Navigation
+Creating new card 
+Moving the card
+Archivating card
